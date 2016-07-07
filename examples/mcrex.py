@@ -29,9 +29,9 @@ import os
 g = random.Random(randseed)
 
 
-if len(sys.argv) < 2:
-    print usage
-    sys.exit(1)
+# if len(sys.argv) < 2:
+#     print usage
+#     sys.exit(1)
  
  
 VERBOSE = True
@@ -120,7 +120,8 @@ def attemptswap(replicas,swaps,viableswaps):
 if __name__ == '__main__':
     
     # load in config file
-    configfile = sys.argv[1]
+    # configfile = sys.argv[1]
+    configfile = "mcrex.conf"
     config = Config()
     config.read_configfile(configfile)
     if VERBOSE:
